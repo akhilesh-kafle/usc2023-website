@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root{
+    --color:#7f6ee1;
+    --primary:#fbc324;
+    --secondary:#121020;
+    --content-color:#ffffffe6;
+}
+
+body{
+    background-color: var(--secondary);
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color); 
+    border-radius: 10px;
+}
+
+
+section{
+    height: 100vh;
+    margin: 10px 60px 0 60px;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home  div{
+    margin-bottom:20px;
+}
+
+#home  div .title{
+    color: var(--color);
+    font-size: 35px;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+#home  div .sub-title{
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+#about-event{
+    height: 120vh;
+}
+
+#about-event .title{
+    color: var(--primary);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+#about-event .about-event-content{
+    color: var(--content-color);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+#about-organizer .title{
+    color: var(--primary);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+#about-organizer .about-organizer-content{
+    color: var(--content-color);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.logo-image{
+    text-align: center;
+}
+
+#conferencechair .title{
+    color: var(--primary);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.conference-chair-image{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.conference-chair-image img{
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.conference-chair-image .image-holder{
+    color: var(--content-color);
+    font-family: sans-serif;
+}
+
+.conference-chair-content{
+    padding-top: 10px;
+    color: var(--content-color);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+

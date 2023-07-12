@@ -1,0 +1,9 @@
+Navbar
+    |
+    |
+    About Event
+    About Organizer
+    Our team
+    Downloads
+
+    
