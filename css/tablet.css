@@ -1,0 +1,12 @@
+#home  div .title{
+    font-size: 30px;
+    letter-spacing: 0px;
+}
+
+#home  div .sub-title{
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+section{
+    padding: 10px 20px 0 20px;
+}

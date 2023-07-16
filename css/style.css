@@ -15,6 +15,7 @@
 body{
     background-color: var(--secondary);
 }
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -26,14 +27,14 @@ body{
 
 
 section{
-    height: 100vh;
-    margin: 10px 60px 0 60px;
+    padding: 10px 60px 0 60px;
 }
 
 #home{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 #home  div{
@@ -61,7 +62,7 @@ section{
 }
 
 #about-event{
-    height: 120vh;
+    height: auto;
 }
 
 #about-event .title{
@@ -105,6 +106,10 @@ section{
 .logo-image{
     text-align: center;
 }
+#conferencechair{
+    height: auto;
+}
+
 
 #conferencechair .title{
     color: var(--primary);
@@ -143,3 +148,151 @@ section{
     text-align: justify;
 }
 
+
+
+#orgainizing-team {
+    height: auto;
+}
+#orgainizing-team .title{
+    color: var(--primary);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.image-container .item{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 10px;
+}
+
+.image-container .item .name{
+    color: white;
+    font-family:sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.image-container .item .position {
+    color: var(--content-color);
+    font-family:sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 3px;
+}
+
+#key-dates{
+    height: 50vh;
+}
+#key-dates .title{
+    color: var(--primary);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.list-container .key-dates-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#key-dates .key-dates-content{
+    color: var(--content-color);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+}
+
+
+
+#downloads{
+    height: 50vh;
+}
+
+#downloads .title{
+    color: var(--primary);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.download-container{
+    display: flex;
+    justify-content: center;
+}
+
+.download-container button{
+    background-color: var(--primary);
+    padding: 20px 30px 20px 30px;
+    border: 3px solid var(--secondary);
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 15px;
+    color: var(--content-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.download-container button:hover{
+    background-color: var(--secondary);
+    border: 3px solid var(--primary);
+}
+
+
+#venue{
+    height: auto;
+}
+
+
+.venue-container{
+    display: flex;
+    justify-content: space-around;
+}
+#venue .title{
+    color: var(--primary);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding: 20px; 
+}
+
+
+#venue .venue-content{
+    color: var(--content-color);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
