@@ -35,3 +35,12 @@ section{
     align-items: center;
     text-align: justify;
 }
+
+.navbar .links{
+    display: none;
+}
+
+.navbar .toggle-btn{
+    display: block;
+}
+

@@ -30,3 +30,12 @@ section{
     align-items: center;
     text-align: center;
 }
+
+.navbar .links{
+    display: none;
+}
+
+.navbar .toggle-btn{
+    display: block;
+}
+

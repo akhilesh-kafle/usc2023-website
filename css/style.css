@@ -25,9 +25,73 @@ body{
     border-radius: 10px;
 }
 
+.toggle-btn{
+    display: none;
+    cursor: pointer;
+}
 
+.dropdown{
+    position: absolute;
+    right: 0;
+    top:60px;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    background-color: #121020e4;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+.click{
+    display: flex;
+}
+.dropdown a{
+    margin: 10px 0px 0 0px;
+    color: var(--content-color);
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.navbar{
+    padding-left: 20px;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    top:0;
+    right: 0;
+    font-family: sans-serif;
+}
+
+.sticky{
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    background-color:#08070e30 ;
+    transition: all 0.5s linear;
+}
+.links a{
+    margin: 0 10px 0 10px;
+    color: var(--content-color);
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    border:2px solid var(--secondary);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.links a:hover{
+    border: 2px solid var(--content-color);
+    background-color: var(--content-color);
+    color: var(--secondary);
+    transition: all 0.5s ease-in-out;
+
+}
 section{
-    padding: 10px 60px 0 60px;
+    padding: 60px 60px 0 60px;
 }
 
 #home{
@@ -207,7 +271,7 @@ section{
     padding-top: 3px;
 }
 .image-container .item img:hover{
-    border: 2px solid var(--color);
+    border: 5px solid var(--color);
     transition: border 0.1s;
     cursor: pointer;
 }
