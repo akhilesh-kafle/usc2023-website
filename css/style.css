@@ -3,6 +3,8 @@
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 :root{
@@ -69,7 +71,7 @@ body{
 .sticky{
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
-    background-color:#08070e30 ;
+    background-color:var(--secondary) ;
     transition: all 0.5s linear;
 }
 .links a{
@@ -89,6 +91,11 @@ body{
     color: var(--secondary);
     transition: all 0.5s ease-in-out;
 
+}
+.active{
+    border: 2px solid var(--content-color);
+    background-color: var(--content-color);
+    color: var(--secondary);
 }
 section{
     padding: 60px 60px 0 60px;
@@ -125,6 +132,24 @@ section{
     line-height: 1.6;
 }
 
+#home button{
+    background-color: var(--primary);
+    padding: 20px 30px 20px 30px;
+    border: 3px solid var(--secondary);
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 15px;
+    color: var(--content-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: auto;
+}
+
+#home button:hover{
+    background-color: var(--secondary);
+    border: 3px solid var(--primary);
+}
 #about-event{
     height: auto;
 }
@@ -276,7 +301,7 @@ section{
     cursor: pointer;
 }
 #key-dates{
-    height: 50vh;
+    height: auto;
 }
 #key-dates .title{
     color: var(--primary);
@@ -306,7 +331,7 @@ section{
 
 
 #downloads{
-    height: 50vh;
+    height: 100vh;
 }
 
 #downloads .title{
@@ -323,6 +348,9 @@ section{
 .download-container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .download-container button{
@@ -336,6 +364,7 @@ section{
     color: var(--content-color);
     font-weight: 600;
     letter-spacing: 1px;
+    width: auto;
 }
 
 .download-container button:hover{
@@ -343,7 +372,67 @@ section{
     border: 3px solid var(--primary);
 }
 
+#registration-fee{
+    height: auto;
+}
 
+#registration-fee .title{
+    color: var(--primary);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.registration-fee-content{
+    padding-top: 10px;
+    color: var(--content-color);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#conference-topic{
+    height: auto;
+}
+
+#conference-topic .title{
+    color: var(--primary);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.conference-topic-container{
+    padding-top: 10px;
+    color: var(--content-color);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.block{
+    width: 400px;
+}
+.block-title{
+    font-size: 20px;
+    text-decoration: underline;
+}
 #venue{
     height: auto;
 }
@@ -392,4 +481,60 @@ section{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
+}
+
+
+
+
+.fb-customerchat {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1s;
+}
+
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background-color: var(--secondary);
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: var(--content-color);
+    width: 0;
+}
+
+
+.go-up {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+    z-index: 9999;
+}
+
+.go-up a {
+    text-decoration: none;
+    color: var(--color);
+    font-size: 30px;
+}
+
+.go-up a:hover {
+    color: var(--primary);
 }

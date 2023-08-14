@@ -8,26 +8,33 @@
     <link rel="stylesheet" media="(max-width:500px)" href="css/smartphone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="css/pre-site.css">
+    <link rel="stylesheet" href="css/popup.css">
     <title>USC 2023 - Association of Mechanical Engineering Students</title>
 </head>
 <body>
     <div class="preloader">
         <div class="preloader-text"> </div>
     </div>
-
-
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    <div class="go-up" id="goUp">
+        <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    
     <header>
         <div class="navbar">
             <div class="logo">
                 <img src="images/usc-logo.png" alt="USC logo" width="120px" height="50px">
             </div>
             <div class="links">
-                <a href="#home">Home</a>
-                <a href="#about-event">About Event</a>
-                <a href="#about-organizer">About Organizer</a>
-                <a href="#orgainizing-team">Organizing team</a>
-                <a href="#key-dates">Key-dates</a>
-                <a href="#downloads">Downloads</a>
+                <a class="link" href="#home">Home</a>
+                <a class="link"  href="#about-event">About Event</a>
+                <a class="link"  href="#about-organizer">About Organizer</a>
+                <a class="link"  href="#orgainizing-team">Organizing team</a>
+                <a class="link"  href="#key-dates">Key-dates</a>
+                <a class="link"  href="#downloads">Downloads</a>
+                <a class="link"  href="#conference-topic">Conference Topics</a>
             </div>
             <div class="dropdown">
                 <a href="#home">Home</a>
@@ -36,24 +43,28 @@
                 <a href="#orgainizing-team">Organizing team</a>
                 <a href="#key-dates">Key-dates</a>
                 <a href="#downloads">Downloads</a>
+                <a href="#conference-topic">Conference Topics</a>
             </div>
             <div class="toggle-btn">
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
             </div>
         </div>
     </header>
-    <section id="home">
+    <section  id="home">
         <div class="home-text">
             <div class="title">
                 3<sup>rd</sup> UNIVERSITY SCHOLAR CONFERENCE: <br>ENGINEERING,TECHNOLOGY AND INNOVATION
             </div>
             <div class="sub-title">
-                Welcome to USC 2023: University Scholars Conference 
+                Welcome to USC 2023: University Scholars Conference <br>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScAeqzkNwc-IGHJ7OgJGFctBNQ5aXRoEjR4g0_Loa7GfDJIyA/viewform" target="_blank">
+                    <button>Submit your Abstract</button>
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="about-event">
+    <section class="hidden" id="about-event">
         <div class="title">
             ABOUT THE EVENT
         </div>
@@ -62,7 +73,7 @@
         </div>
     </section>
 
-    <section id="about-organizer">
+    <section class="hidden" id="about-organizer">
         <div class="title">
             THE EVENT ORGANIZERS
         </div>
@@ -82,7 +93,7 @@
         </div>
     </section>
 
-    <section id="conferencechair">
+    <section class="hidden" id="conferencechair">
         <div class="title">
             CONFERENCE CHAIR
         </div>
@@ -100,7 +111,7 @@
         </div>
     </section>
 
-    <section id="orgainizing-team">
+    <section class="hidden" id="orgainizing-team">
         <div class="title">ORGANIZING TEAM</div>
         <div class="our-team">
             <div class="image-container">
@@ -238,7 +249,7 @@
                 </div></div>
 
                 <div class="item"><div class="face">
-                    <img src="images/akhilesh.jpg" alt="Akhilesh Kafle" height="200px" width="200px" style="border-radius: 50%;">
+                    <img src="images/photoakhi.jpg" alt="Akhilesh Kafle" height="200px" width="200px" style="border-radius: 50%;">
                 </div>
                 <div class="name">
                     Akhilesh Kafle
@@ -253,7 +264,7 @@
     </section>
 
 
-    <section id="key-dates">
+    <section class="hidden" id="key-dates">
         <div class="title">
             KEY DATES
         </div>
@@ -283,17 +294,177 @@
         </div>
     </section>
 
-    <section id="downloads">
+    <section class="hidden" id="downloads">
         <div class="title">
             DOWNLOADS
         </div>
         <div class="download-container">
-            <button>ABSTRACT PAPER</button>
-            <button>CALL FOR PAPER</button>
+            <a href="files/Abstract-Template-USC-2023.docx" target="_blank">
+                <button>Abstract Format</button>
+            </a>
+            <a>
+                <button id="popupButton">CALL FOR PAPER</button>
+            </a>
+            
+            <div id="imageContainer">
+                <img src="images/Call-for-Papers.png" alt="Image">
+              </div>
+            <a href="https://ames.ku.edu.np/wp-content/uploads/2020/11/Guidelines-for-paper-submission.pdf" target="_blank">
+                <button>Paper Submission Guidelines</button>
+            </a>
+
+            <a href="files/Full-paper-guidelines-2.docx" target="_blank">
+                <button>Guidelines For Full Paper Manuscript</button>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1M1xd9vYWJ3-UvofEFc19qDQtAoy6EK-Y/view" target="_blank">
+                <button>Previous Abstract Book</button>
+            </a>
+
+
         </div>
     </section>
 
-    <section id="venue">
+    <section class="hidden" id="registration-fee">
+        <div class="title">
+            REGISTRATION FEE
+        </div>
+        <div class="registration-fee-container">
+            <div class="registration-fee-content">
+                <div>The payment has to done only for the full paper. There’s no payment requirement for abstract submission.
+                </div><br>
+                <div class="fee-structure">
+                    <ul>
+                        <li>
+                            <strong style="text-decoration: underline;">For full papers:</strong>
+                        </li>
+                        <li>
+                            <strong>Researchers and Academician: </strong> NPR 5000
+                        </li>
+                        <li>
+                            <strong>Active Students:</strong> NPR 1500
+                        </li>
+                        <li>
+                            <strong>AMES Member: </strong> NPR 1000
+                        </li>
+                        <li>
+                            <strong>International Participants: </strong> USD 100
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="hidden" id="conference-topic">
+        <div class="title">
+            CONFERENCE TOPICS
+        </div>
+        <div class="conference-topic-container">
+            <div class="sub-title">USC encourages and considers submissions within the given conference themes. Unlisted but related topics can also be submitted.</div>
+            <div class="block automative-system">
+                <strong class="block-title">Automative System</strong>
+                <ul>
+                    <li>Recent Trends In Automotive Technologies</li>
+                    <li>Engine Systems</li>
+                    <li>Electric And Hybrid Electric Vehicles</li>
+                    <li>UAV And MAV</li>
+                    <li>Combustion And Emission Control Design</li>
+                    <li>Green Fuel Technologies</li>
+                    <li>Innovation On Green Vehicles</li>
+                    <li>Intelligent Systems In Vehicles</li>
+                    <li>Intelligent Transport Systems</li>
+                    <li>Multi Body Dynamics</li>
+                    <li>Safety Engineering</li>
+                    <li>Fuel Economy And Emissions Research</li>
+                    <li>NVH (Noise, Vibration And Harshness)</li>
+                    <li>Vehicle Dynamics/Aerodynamics And Control</li>
+                    <li>Operations Research</li>
+                    <li>Digital Techniques In Automotive</li>
+                    <li>Manufacturing Processes</li>
+                    <li>Advanced Safety Technologies</li>
+                    <li>Automotive Human Factors And Ergonomics</li>
+                    <li>Traffic Management</li>
+                  </ul>                  
+            </div>
+
+            <div class="block manufacturing-proccess">
+                <storong class="block-title">Manufacturing Process</storong>
+                <ul>
+                    <li>Polymers And Soft Materials</li>
+                    <li>Electronics, Optical And Magnetic Materials</li>
+                    <li>Ceramics And Composite Materials</li>
+                    <li>Smart Materials And Nanotechnology</li>
+                    <li>Material And Design</li>
+                    <li>Product Design And Process Engineering</li>
+                    <li>Building And Infrastructural Design</li>
+                    <li>Design Creativity And Technology</li>
+                    <li>Data Driven Design</li>
+                    <li>Finite Element Analysis</li>
+                    <li>Agile Design And Manufacturing</li>
+                    <li>Optimization Of Mechanical Systems</li>
+                    <li>Vibration Acoustic Of Automation And Product Design</li>
+                    <li>Material Processing And Manufacturing</li>
+                    <li>Material Characterization And Testing</li>
+                    <li>Heat Treatment And Mechanical Treatment Processes</li>
+                    <li>Multiscale Material Modeling</li>
+                    <li>Biomaterials And Prosthetic Devices</li>
+                  </ul>                  
+            </div>
+
+            <div class="block advances-in-energy-system">
+                <strong class="block-title">Advances In Energy System</strong>
+                <ul>
+                    <li>Energy Production Process</li>
+                    <li>Energy And Sustainability</li>
+                    <li>Energy Policy And Management</li>
+                    <li>Renewable And Alternative Energy Resources</li>
+                    <li>Recent Advances In Renewable Energy Systems</li>
+                    <li>Energy Storage And Flexibility</li>
+                    <li>Solid Waste Management</li>
+                    <li>Building And Energy</li>
+                    <li>Hydropower Technologies</li>
+                    <li>Hydraulic Turbines And Pumps</li>
+                    <li>Experimental And Numerical Techniques For Hydraulic Machineries</li>
+                    <li>Operation And Maintenance Of Power Plants</li>
+                    <li>Hybrid Energy Systems</li>
+                    <li>Hydrogen Technologies</li>
+                    <li>Alternate Fuel</li>
+                    <li>Combustion</li>
+                    <li>Fuel Reprocessing</li>
+                    <li>Bio Filtration</li>
+                  </ul>                  
+            </div>
+
+            <div class="block technology-for-social-transformation">
+                <strong class="block-title">Technology For Social Transformation</strong>
+                <ul>
+                    <li>Industry 4.0</li>
+                    <li>AI and Data Science</li>
+                    <li>Smart Manufacturing</li>
+                    <li>Robotics And Mechatronics</li>
+                    <li>Internet Of Things</li>
+                    <li>Digital Twin And Digitization</li>
+                    <li>Digital Economy</li>
+                    <li>Fault Detection And Diagnosis Of Machines</li>
+                    <li>Electrical, Electronics And Technology</li>
+                    <li>Infrastructure Development And Technology</li>
+                    <li>Mountain Agriculture And Agriculture Technology</li>
+                    <li>Precision Agriculture And Smart Farming</li>
+                    <li>Medical Innovation And Technology</li>
+                    <li>Healthcare and Assistive Technologies</li>
+                    <li>Advances In Biotechnology And Food Science</li>
+                    <li>Environment, Climate Change And Technology</li>
+                    <li>Aerospace And GNSS Technology</li>
+                    <li>Sanitation And Water Technology</li>
+                  </ul>
+                                 
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hidden" id="venue">
         <div class="title">
             VENUE
         </div>
@@ -306,8 +477,9 @@
             </div>
         </div>
     </section>
+
     
-    <section id="footer">
+    <section  id="footer">
         <div class="footer-container">
             <div class="location">
                 Block-8 Department of Mechanical Engineering,<br> Kathmandu University, Dhulikhel 45200, Nepal 
@@ -317,6 +489,13 @@
             </div>
         </div>
     </section>
+
+
+    <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="YOUR_PAGE_ID"
+        theme_color="#0084FF">
+    </div>
 
     <script src="js/script.js"></script>
 </body>
