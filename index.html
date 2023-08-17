@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="(max-width:900px) and (min-width:501px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(max-width:950px) and (min-width:501px)" href="css/tablet.css">
     <link rel="stylesheet" media="(max-width:500px)" href="css/smartphone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="css/pre-site.css">
@@ -24,43 +24,54 @@
     
     <header>
         <div class="navbar">
-            <div class="logo">
-                <img src="images/usc-logo.png" alt="USC logo" width="120px" height="50px">
+            <div class="logo" style="margin: 15px;">
+                <img src="images/usc-logo.png" alt="USC logo" width="180px" height="80px">
             </div>
             <div class="links">
-                <a class="link" href="#home">Home</a>
-                <a class="link"  href="#about-event">About Event</a>
-                <a class="link"  href="#about-organizer">About Organizer</a>
-                <a class="link"  href="#orgainizing-team">Organizing team</a>
-                <a class="link"  href="#key-dates">Key-dates</a>
-                <a class="link"  href="#downloads">Downloads</a>
-                <a class="link"  href="#conference-topic">Conference Topics</a>
+                <a class="link" href="#home">HOME</a>
+                <a class="link dropdown-toggle" href="#">ABOUT ▼</a>
+                <div class="dropdown-content">
+                    <a class="link" href="#about-event">ABOUT EVENT</a>
+                    <a class="link" href="#about-organizer">ABOUT ORGANIZERS</a>
+                    <a class="link" href="#conferencechair">CONFERENCE CHAIR</a>
+                    <a class="link" href="#orgainizing-team">ORGANIZING TEAM</a>
+                </div>
+                <a class="link"  href="#key-dates">KEY-DATES</a>
+                <a class="link"  href="#downloads">DOWNLOADS</a>
+                <a class="link"  href="#registration-fee" >REGISTRATION FEES</a>
+                <a class="link"  href="#conference-topic">CONFERENCE TOPICS</a>
+                <a class="link"  href="#venue">VENUE</a>
             </div>
-            <div class="dropdown">
+            <div class="responsive-dropdown">
                 <a href="#home">Home</a>
-                <a href="#about-event">About Event</a>
-                <a href="#about-organizer">About Organizer</a>
-                <a href="#orgainizing-team">Organizing team</a>
-                <a href="#key-dates">Key-dates</a>
-                <a href="#downloads">Downloads</a>
-                <a href="#conference-topic">Conference Topics</a>
+                <a href="#about-event">ABOUT EVENT</a>
+                <a href="#about-event">ABOUT ORGANIZERS</a>
+                <a href="#about-organizer">CONFERENCE CHAIR</a>
+                <a href="#orgainizing-team">ORGANIZING TEAM</a>
+                <a href="#key-dates">KEY-DATES</a>
+                <a href="#downloads">DOWNLOADS</a>
+                <a href="#registration-fee" >REGISTRATION FEES</a>
+                <a href="#conference-topic">CONFERENCE TOPICS</a>
+                <a href="#venue">VENUE</a>
             </div>
             <div class="toggle-btn">
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
             </div>
         </div>
     </header>
-    <section  id="home">
+    <section  class="hidden" id="home">
         <div class="home-text">
             <div class="title">
-                3<sup>rd</sup> UNIVERSITY SCHOLAR CONFERENCE: <br>ENGINEERING,TECHNOLOGY AND INNOVATION
+                3<sup>rd</sup> UNIVERSITY SCHOLAR CONFERENCE:
             </div>
             <div class="sub-title">
-                Welcome to USC 2023: University Scholars Conference <br>
+                <span>WELCOME TO USC 2023:<br>
+                </span> <span id="changing-text"></span> <br>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScAeqzkNwc-IGHJ7OgJGFctBNQ5aXRoEjR4g0_Loa7GfDJIyA/viewform" target="_blank">
-                    <button>Submit your Abstract</button>
+                    <button>SUBMIT YOUR ABSTRACT</button>
                 </a>
             </div>
+            
         </div>
     </section>
 
@@ -360,8 +371,8 @@
         <div class="title">
             CONFERENCE TOPICS
         </div>
+        <div class="sub-title">USC encourages and considers submissions within the given conference themes. Unlisted but related topics can also be submitted.</div>
         <div class="conference-topic-container">
-            <div class="sub-title">USC encourages and considers submissions within the given conference themes. Unlisted but related topics can also be submitted.</div>
             <div class="block automative-system">
                 <strong class="block-title">Automative System</strong>
                 <ul>
@@ -489,13 +500,6 @@
             </div>
         </div>
     </section>
-
-
-    <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="YOUR_PAGE_ID"
-        theme_color="#0084FF">
-    </div>
 
     <script src="js/script.js"></script>
 </body>
