@@ -526,31 +526,27 @@ section{
 
 
 #footer{
-    height: 150px;
-    text-align: justify;
+    height: 200px;
     color: rgba(0, 0, 0, 0.744);
     font-weight: 700;
     letter-spacing: 0.5px;
     font-family: sans-serif;
     font-size: 15px;
     background-color: rgba(255, 255, 255, 0.68);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
 }
 
 .footer-container{
-    margin-top: 50px;
     display: flex;
+    gap:20vw;
     justify-content:space-evenly;
     align-items: center;
 }
 
 
-
-
-.fb-customerchat {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-}
 
 .hidden{
     opacity: 0;

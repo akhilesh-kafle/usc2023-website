@@ -24,11 +24,8 @@ section{
 }
 
 .footer-container{
-    margin-top: 30px;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
+    gap:10px;
 }
 
 .navbar .links{
