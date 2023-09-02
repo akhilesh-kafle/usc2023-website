@@ -125,7 +125,7 @@ body{
     color: var(--secondary);
 }
 section{
-    padding: 100px 60px 0 60px;
+    padding: 100px 9.5vw 0 9.5vw;
 }
 
 #home{
@@ -455,6 +455,7 @@ section{
 
 #conference-topic{
     height: auto;
+    font-family: sans-serif;
 }
 
 #conference-topic .title{
